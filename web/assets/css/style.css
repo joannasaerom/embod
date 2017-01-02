@@ -5,6 +5,21 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.services {
+  display: flex; }
+  .services .service-boxes {
+    overflow: hidden;
+    width: 250px;
+    height: 400px; }
+
+.mainbanner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: auto;
+  background-image: url("https://images.unsplash.com/photo-1474426112664-8f4248139c49?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=509&amp;q=80&amp;cs=tinysrgb&amp;crop="); }
+
 .centered-navigation {
   background-color: #E7F1EC;
   border-bottom: 1px solid #d4e6dd;
