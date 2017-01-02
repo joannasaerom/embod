@@ -5,13 +5,18 @@
 <!-- ============= Website information  ================ -->
     <div class="row">
       <div class="col-sm-2">
+        <ul>
+        {% for key,value in submenus %}
+          <a href="{{ value }}"><li>{{ key }}</li></a>
+        {% endfor %}
+        </ul>
       </div>
       <div class="col-sm-4">
         <img src='{{ imgurl }}' class="img-responsive">
       </div>
       <div class="col-sm-6">
-        {{ title }}
-        {{ content }}
+        <h2>{{ title }}</h2>
+        <p>{{ content }}</p>
       </div>
     </div>
   </div>
