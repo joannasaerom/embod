@@ -2,6 +2,11 @@
 
 $librefont: 'Libre Baskerville', serif;
 $montserrat: 'Montserrat', sans-serif;
+$transparentblue: rgba(0, 0, 59, 0.8);
+
+body {
+  font-family: $montserrat;
+}
 
 %border-box {
   -webkit-box-sizing: border-box;
@@ -17,23 +22,32 @@ $montserrat: 'Montserrat', sans-serif;
   padding: 0px;
 }
 .servicesBanner {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
-  padding-top: 2vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 
 
   h2 {
     text-align: center;
     font-family: $librefont;
     font-weight: 700;
+    font-size: 3.5em;
     width: 100%;
-    vertical-align: middle;
 
+    &::after {
+      display: block;
+      content: '';
+      padding-top: 1vh;
+      border-bottom: solid 3px black;
+      transform: scaleX(0.2);
+    }
   }
 
   p {
     width: 80%;
     margin: 0 auto;
+    text-align: justify;
   }
 }
 
@@ -45,11 +59,30 @@ $montserrat: 'Montserrat', sans-serif;
     flex-grow: 1;
     overflow: hidden;
     height: 400px;
-  }
+    position: relative;
+    opacity: 0.8;
 
-  img {
-    width: 600px;
-    height: auto;
+    &:hover{
+      opacity: 1.0;
+      cursor:pointer;
+   }
+
+    h6{
+    position:absolute;
+    bottom: 0;
+    background:$transparentblue;
+    color:#ffffff;
+    font-size:1em;
+    letter-spacing:5px;
+    padding:20px;
+    margin-left: 5%;
+    transition:0.3s ease-in;
+
+   }
+   img {
+     width: 600px;
+     height: auto;
+   }
   }
 }
 
@@ -351,7 +384,7 @@ $montserrat: 'Montserrat', sans-serif;
   margin-top: 75px;
 }
 
-$transparentblue: rgba(0, 0, 59, 0.8);
+
 
 @-webkit-keyframes revealText {
   0% { opacity: 0; }
@@ -413,7 +446,7 @@ $transparentblue: rgba(0, 0, 59, 0.8);
     text-align: center;
     color: white;
     font-size: 15vh;
-    font-family: $montserrat;
+    // font-family: $montserrat;
     margin: 0 auto;
     opacity: 0;
     margin-top: 3vh;
@@ -440,7 +473,7 @@ $transparentblue: rgba(0, 0, 59, 0.8);
     text-align: center;
     color: white;
     opacity: 0;
-    font-family: $montserrat;
+    // font-family: $montserrat;
     font-style: italic;
     -webkit-animation: revealText 1s ease-in 1s;
     -moz-animation: revealText 1s ease-in 1s;

@@ -1,9 +1,11 @@
+
+
 $(document).ready(function() {
-  $("body").removeClass("preload");
   $("#rectangle").addClass("reveal");
   $("#companyName").addClass("revealText");
   $("#companySlogan").addClass("revealText");
   $("#servicesButton").addClass("revealText");
+
 });
 
 $(function() {
@@ -20,6 +22,7 @@ $(function() {
     }
   });
 });
+
 
 // $(".servicesButton a[href^='#']").click(function(e){
 //   e.preventDefault();

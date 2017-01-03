@@ -5,6 +5,9 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body {
+  font-family: "Montserrat", sans-serif; }
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -14,28 +17,51 @@ html {
   padding: 0px; }
 
 .servicesBanner {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
-  padding-top: 2vh; }
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
   .servicesBanner h2 {
     text-align: center;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
-    width: 100%;
-    vertical-align: middle; }
+    font-size: 3.5em;
+    width: 100%; }
+    .servicesBanner h2::after {
+      display: block;
+      content: '';
+      padding-top: 1vh;
+      border-bottom: solid 3px black;
+      transform: scaleX(0.2); }
   .servicesBanner p {
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: justify; }
 
 .services {
   display: flex; }
   .services .service-boxes {
     flex-grow: 1;
     overflow: hidden;
-    height: 400px; }
-  .services img {
-    width: 600px;
-    height: auto; }
+    height: 400px;
+    position: relative;
+    opacity: 0.8; }
+    .services .service-boxes:hover {
+      opacity: 1.0;
+      cursor: pointer; }
+    .services .service-boxes h6 {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 59, 0.8);
+      color: #ffffff;
+      font-size: 1em;
+      letter-spacing: 5px;
+      padding: 20px;
+      margin-left: 5%;
+      transition: 0.3s ease-in; }
+    .services .service-boxes img {
+      width: 600px;
+      height: auto; }
 
 .centered-navigation {
   background-color: rgba(255, 255, 255, 0.5);
@@ -279,7 +305,6 @@ html {
     text-align: center;
     color: white;
     font-size: 15vh;
-    font-family: "Montserrat", sans-serif;
     margin: 0 auto;
     opacity: 0;
     margin-top: 3vh;
@@ -302,7 +327,6 @@ html {
     text-align: center;
     color: white;
     opacity: 0;
-    font-family: "Montserrat", sans-serif;
     font-style: italic;
     -webkit-animation: revealText 1s ease-in 1s;
     -moz-animation: revealText 1s ease-in 1s;
