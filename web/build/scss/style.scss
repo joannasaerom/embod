@@ -1,5 +1,7 @@
 @import 'vendor/index';
 
+$librefont: 'Libre Baskerville', serif;
+
 %border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -13,41 +15,59 @@
 .container-fluid {
   padding: 0px;
 }
+.servicesbanner {
+  height: 30vh;
+  width: 100%;
+  display: table;
+
+  h2 {
+    text-align: center;
+    font-family: $librefont;
+    font-weight: 700;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
 
 .services {
   display: flex;
 
   .service-boxes {
+    flex-grow: 1;
     overflow: hidden;
-    width: 250px;
     height: 400px;
   }
 
   img {
+    width: 600px;
+    height: auto;
   }
 }
 
 .centered-navigation {
   $base-border-radius: 1px !default;
-  $white: black !default;
+  $black: black !default;
+  $white: white !default;
   $large-screen: 53.75em !default;
-  $base-font-color: $white !default;
+  $base-font-color: $black !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: transparent;
-  $submenu-background: transparentize($white, 0.8);
+  $submenu-background: transparentize($white, 0.5);
   $centered-navigation-color: transparentize($base-font-color, 0.1);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 50px;
-  $centered-navigation-item-padding: 1em;
-  $centered-navigation-submenu-padding: 4em;
+  $centered-navigation-item-padding: .5em;
+  $centered-navigation-submenu-padding: 2.5em;
   $centered-navigation-submenu-width: 12em;
   $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
 
-  background-color: $centered-navigation-background;
-  border-bottom: 1px solid darken($centered-navigation-background, 6%);
+
+  background-color: $submenu-background;
   min-height: $centered-navigation-height;
+  font-family: $librefont;
   width: 100%;
   z-index: 9999;
 
@@ -128,7 +148,7 @@
   }
 
   ul li.nav-link {
-    background: $centered-navigation-background;
+    background: $submenu-background;
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
@@ -318,8 +338,15 @@
   width: auto;
   background-image: url('https://images.unsplash.com/photo-1474426112664-8f4248139c49?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=509&amp;q=80&amp;cs=tinysrgb&amp;crop=');
   .centered-navigation{
+    background-color: transparent;
+    .centered-navigation-mobile-menu {
+      color: white;
+    }
     ul li.nav-link{
       a{
+        color: white;
+      }
+      > a::after {
         color: white;
       }
     }

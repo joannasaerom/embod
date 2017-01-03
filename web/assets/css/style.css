@@ -13,17 +13,32 @@ html {
 .container-fluid {
   padding: 0px; }
 
+.servicesbanner {
+  height: 30vh;
+  width: 100%;
+  display: table; }
+  .servicesbanner h2 {
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle; }
+
 .services {
   display: flex; }
   .services .service-boxes {
+    flex-grow: 1;
     overflow: hidden;
-    width: 250px;
     height: 400px; }
+  .services img {
+    width: 600px;
+    height: auto; }
 
 .centered-navigation {
-  background-color: transparent;
-  border-bottom: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   min-height: 50px;
+  font-family: "Libre Baskerville", serif;
   width: 100%;
   z-index: 9999; }
   .centered-navigation .mobile-logo {
@@ -41,7 +56,7 @@ html {
     float: right;
     line-height: 50px;
     margin: 0;
-    padding-right: 4em;
+    padding-right: 2.5em;
     text-decoration: none;
     text-transform: uppercase; }
     @media screen and (min-width: 53.75em) {
@@ -82,11 +97,11 @@ html {
     .centered-navigation .nav-link:first-child {
       margin-left: 2.2em; } }
   .centered-navigation ul li.nav-link {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.5);
     display: block;
     line-height: 50px;
     overflow: hidden;
-    padding-right: 4em;
+    padding-right: 2.5em;
     text-align: right;
     width: 100%;
     z-index: 9999; }
@@ -103,7 +118,7 @@ html {
         display: inline;
         line-height: 50px; }
         .centered-navigation ul li.nav-link a {
-          padding-right: 1em; } }
+          padding-right: 0.5em; } }
   .centered-navigation li.logo.nav-link {
     display: none;
     line-height: 0; }
@@ -118,11 +133,11 @@ html {
     padding-right: 0; }
     @media screen and (min-width: 53.75em) {
       .centered-navigation li.more.nav-link {
-        padding-right: 4em; } }
+        padding-right: 2.5em; } }
     .centered-navigation li.more.nav-link > ul > li:first-child a {
       padding-top: 1em; }
     .centered-navigation li.more.nav-link a {
-      margin-right: 4em; }
+      margin-right: 2.5em; }
     .centered-navigation li.more.nav-link > a {
       padding-right: 0.6em; }
     .centered-navigation li.more.nav-link > a::after {
@@ -137,30 +152,30 @@ html {
     overflow: visible;
     padding-right: 0; }
     .centered-navigation li.more a {
-      padding-right: 4em; }
+      padding-right: 2.5em; }
     .centered-navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
       @media screen and (min-width: 53.75em) {
         .centered-navigation li.more > a {
-          margin-right: 4em; } }
+          margin-right: 2.5em; } }
       .centered-navigation li.more > a::after {
         content: "›";
         font-size: 1.2em;
         position: absolute;
-        right: 2em; }
+        right: 1.25em; }
     .centered-navigation li.more:focus > .submenu, .centered-navigation li.more:hover > .submenu {
       display: block; }
     @media screen and (min-width: 53.75em) {
       .centered-navigation li.more {
-        padding-right: 4em;
+        padding-right: 2.5em;
         position: relative; } }
   .centered-navigation ul.submenu {
     display: none;
     padding-left: 0; }
     @media screen and (min-width: 53.75em) {
       .centered-navigation ul.submenu {
-        left: -4em;
+        left: -2.5em;
         position: absolute;
         top: 1.5em; } }
     .centered-navigation ul.submenu li {
@@ -177,15 +192,15 @@ html {
             border-bottom-right-radius: 1px;
             padding-bottom: 0.7em; } }
       .centered-navigation ul.submenu li a {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(247, 247, 247, 0.5);
         display: inline-block;
         text-align: right;
         text-decoration: none;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
           .centered-navigation ul.submenu li a {
-            background-color: rgba(0, 0, 0, 0.2);
-            padding-left: 4em;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding-left: 2.5em;
             text-align: left;
             width: 12em; } }
 
@@ -196,8 +211,14 @@ html {
   min-height: 100vh;
   width: auto;
   background-image: url("https://images.unsplash.com/photo-1474426112664-8f4248139c49?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=509&amp;q=80&amp;cs=tinysrgb&amp;crop="); }
-  .mainbanner .centered-navigation ul li.nav-link a {
-    color: white; }
+  .mainbanner .centered-navigation {
+    background-color: transparent; }
+    .mainbanner .centered-navigation .centered-navigation-mobile-menu {
+      color: white; }
+    .mainbanner .centered-navigation ul li.nav-link a {
+      color: white; }
+    .mainbanner .centered-navigation ul li.nav-link > a::after {
+      color: white; }
 
 .subpage {
   margin-top: 75px; }
