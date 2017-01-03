@@ -78,6 +78,9 @@ body {
       max-height: 50px;
       opacity: 0.6;
       padding: 0.8em 0; }
+    @media screen and (min-width: 53.75em) {
+      .centered-navigation .mobile-logo {
+        display: none; } }
   .centered-navigation .centered-navigation-mobile-menu {
     color: rgba(0, 0, 0, 0.9);
     display: block;

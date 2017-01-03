@@ -125,9 +125,9 @@ body {
       padding: 0.8em 0;
     }
 
-  //   @include media($horizontal-bar-mode) {
-  //     display: none;
-  //   }
+    @include media($horizontal-bar-mode) {
+      display: none;
+    }
    }
 
   .centered-navigation-mobile-menu {
@@ -207,17 +207,6 @@ body {
       &:hover {
         color: $centered-navigation-color-hover;
       }
-      // &:after {
-      //   display:block;
-      //   content: '';
-      //   padding-bottom:2px;
-      //   border-bottom: solid 2.5px #ffffff;
-      //   transform: scaleX(0.00001);
-      //   transition: transform 350ms ease-in-out;
-      // }
-      // &:hover:after {
-      //   transform: scaleX(.9);
-      // }
     }
 
     @include media($horizontal-bar-mode) {
