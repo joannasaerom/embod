@@ -381,7 +381,7 @@ body {
   }
 }
 .subpage{
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 .sidemenu{
   background-color: $transparentblue;
@@ -392,7 +392,9 @@ body {
   }
   ul {
     margin: 0 auto;
-    line-height: 50px;
+    padding: 0px;
+    padding-top: 20px;
+    line-height: 20px;
     text-align: center;
   }
   li {
@@ -401,10 +403,10 @@ body {
 }
 
 .col-sm-6 h2 {
-  // border: 1px solid black;
   text-align: center;
   font-family: $librefont;
   font-size: 3em;
+  margin-top: 0px;
 
   &::after {
     display: block;
@@ -418,9 +420,8 @@ body {
   margin-top: 0px;
   padding-top: 0px;
 }
-.row {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.col-sm-4 {
+  margin-bottom: 5px;
 }
 
 

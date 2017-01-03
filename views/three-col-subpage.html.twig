@@ -5,10 +5,11 @@
 <!-- ============= Website information  ================ -->
     <div class="container">
       <div class="row subpage">
-        <div class="col-sm-2 sidemenu">
+        <div class="col-sm-2 sidemenu hidden-xs">
           <ul>
           {% for key,value in submenus %}
             <a href="{{ value }}"><li>{{ key }}</li></a>
+            <hr>
           {% endfor %}
           </ul>
         </div>
