@@ -5,66 +5,38 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body {
-  font-family: "Montserrat", sans-serif; }
-
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-family: "Montserrat", sans-serif; }
+
 .container-fluid {
   padding: 0px; }
 
-.servicesBanner {
-  height: 35vh;
-  width: 100%;
-  padding-top: 2vh; }
-  .servicesBanner h2 {
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-size: 3.5em;
-    width: 100%; }
-    .servicesBanner h2::after {
-      display: block;
-      content: '';
-      padding-top: 1vh;
-      border-bottom: solid 3px black;
-      transform: scaleX(0.2); }
-  .servicesBanner p {
-    width: 80%;
-    margin: 0 auto;
-    text-align: justify; }
+.subpage {
+  margin-top: 15vh; }
 
-.services {
-  display: flex; }
-  .services .service-boxes {
-    flex-grow: 1;
-    overflow: hidden;
-    height: 400px;
-    position: relative;
-    opacity: 0.8; }
-    .services .service-boxes:hover {
-      opacity: 1.0;
-      cursor: pointer; }
-    .services .service-boxes h6 {
-      position: absolute;
-      bottom: 0;
-      background: rgba(0, 0, 59, 0.8);
-      color: #ffffff;
-      font-size: 1em;
-      letter-spacing: 4px;
-      padding: 20px;
-      font-family: "Libre Baskerville", serif;
-      margin-left: 5%;
-      transition: 0.3s ease-in; }
-    .services .service-boxes img {
-      width: 600px;
-      height: auto; }
+.sidemenu {
+  background-color: rgba(0, 0, 59, 0.8);
+  border-radius: 2px;
+  min-height: 50vh;
+  margin: 0 auto; }
+  .sidemenu a {
+    color: white; }
+  .sidemenu ul {
+    margin: 0 auto;
+    padding: 0px;
+    padding-top: 20px;
+    line-height: 20px;
+    text-align: center; }
+  .sidemenu li {
+    list-style: none; }
 
 .centered-navigation {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   min-height: 50px;
   font-family: "Libre Baskerville", serif;
   width: 100%;
@@ -128,7 +100,7 @@ body {
     .centered-navigation .nav-link:first-child {
       margin-left: 2.2em; } }
   .centered-navigation ul li.nav-link {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     display: block;
     line-height: 50px;
     overflow: hidden;
@@ -142,7 +114,7 @@ body {
       outline: none;
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
-        color: black; }
+        color: rgba(0, 0, 59, 0.8); }
     @media screen and (min-width: 53.75em) {
       .centered-navigation ul li.nav-link {
         background: transparent;
@@ -223,14 +195,14 @@ body {
             border-bottom-right-radius: 1px;
             padding-bottom: 0.7em; } }
       .centered-navigation ul.submenu li a {
-        background-color: rgba(247, 247, 247, 0.5);
+        background-color: rgba(247, 247, 247, 0.2);
         display: inline-block;
         text-align: right;
         text-decoration: none;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
           .centered-navigation ul.submenu li a {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.2);
             padding-left: 2.5em;
             text-align: left;
             width: 12em; } }
@@ -244,51 +216,6 @@ body {
   width: auto;
   background-image: url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=");
   border: 0.00001px solid white; }
-  .mainBanner .centered-navigation {
-    background-color: transparent; }
-    .mainBanner .centered-navigation .centered-navigation-mobile-menu {
-      color: white; }
-    .mainBanner .centered-navigation ul li.nav-link a {
-      color: white; }
-    .mainBanner .centered-navigation ul li.nav-link > a::after {
-      color: white; }
-
-.subpage {
-  margin-top: 15vh; }
-
-.sidemenu {
-  background-color: rgba(0, 0, 59, 0.8);
-  min-height: 50vh;
-  margin: 0 auto; }
-  .sidemenu a {
-    color: white; }
-  .sidemenu ul {
-    margin: 0 auto;
-    padding: 0px;
-    padding-top: 20px;
-    line-height: 20px;
-    text-align: center; }
-  .sidemenu li {
-    list-style: none; }
-
-.col-sm-6 h2 {
-  text-align: center;
-  font-family: "Libre Baskerville", serif;
-  font-size: 3em;
-  margin-top: 0px; }
-  .col-sm-6 h2::after {
-    display: block;
-    content: '';
-    padding-top: 1vh;
-    border-bottom: solid 3px black;
-    transform: scaleX(0.2); }
-
-.col-sm-6 {
-  margin-top: 0px;
-  padding-top: 0px; }
-
-.col-sm-4 {
-  margin-bottom: 5px; }
 
 @-webkit-keyframes revealText {
   0% {
@@ -379,5 +306,71 @@ body {
 .reveal {
   height: 50vh;
   transition: height 1s ease-in; }
+
+.servicesBanner {
+  height: 35vh;
+  width: 100%;
+  padding-top: 2vh; }
+  .servicesBanner h2 {
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    width: 100%; }
+    .servicesBanner h2::after {
+      display: block;
+      content: '';
+      padding-top: 1vh;
+      border-bottom: solid 3px black;
+      transform: scaleX(0.2); }
+  .servicesBanner p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify; }
+
+.services {
+  display: flex; }
+  .services .service-boxes {
+    flex-grow: 1;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    opacity: 0.8; }
+    .services .service-boxes:hover {
+      opacity: 1.0;
+      cursor: pointer; }
+    .services .service-boxes h6 {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 59, 0.8);
+      color: #ffffff;
+      font-size: 1em;
+      letter-spacing: 4px;
+      padding: 20px;
+      font-family: "Libre Baskerville", serif;
+      margin-left: 5%;
+      transition: 0.3s ease-in; }
+    .services .service-boxes img {
+      width: 600px;
+      height: auto; }
+
+.col-sm-6 h2 {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-size: 3em;
+  margin-top: 0px; }
+  .col-sm-6 h2::after {
+    display: block;
+    content: '';
+    padding-top: 1vh;
+    border-bottom: solid 3px black;
+    transform: scaleX(0.2); }
+
+.col-sm-6 {
+  margin-top: 0px;
+  padding-top: 0px; }
+
+.col-sm-4 {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

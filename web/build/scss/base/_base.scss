@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  @extend %border-box;
+}
+
+body {
+  font-family: $montserrat;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.subpage{
+  margin-top: 15vh;
+}

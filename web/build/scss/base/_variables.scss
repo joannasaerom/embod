@@ -1,0 +1,24 @@
+//fonts
+$librefont: 'Libre Baskerville', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+//colors
+$transparentblue: rgba(0, 0, 59, 0.8);
+$black: black !default;
+$white: white !default;
+
+//for navigation bar
+$base-border-radius: 1px !default;
+$large-screen: 53.75em !default;
+$base-font-color: $black !default;
+$centered-navigation-padding: 1em;
+$centered-navigation-logo-height: 2em;
+$submenu-background: transparentize($white, 0.8);
+$centered-navigation-color: transparentize($base-font-color, 0.1);
+$centered-navigation-color-hover: $base-font-color;
+$centered-navigation-height: 50px;
+$centered-navigation-item-padding: .5em;
+$centered-navigation-submenu-padding: 2.5em;
+$centered-navigation-submenu-width: 12em;
+$centered-navigation-item-nudge: 2.2em;
+$horizontal-bar-mode: $large-screen;
