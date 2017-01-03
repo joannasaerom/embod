@@ -19,15 +19,21 @@ $montserrat: 'Montserrat', sans-serif;
 .servicesBanner {
   height: 30vh;
   width: 100%;
-  display: table;
+  padding-top: 2vh;
+
 
   h2 {
     text-align: center;
     font-family: $librefont;
     font-weight: 700;
-    display: table-cell;
     width: 100%;
     vertical-align: middle;
+
+  }
+
+  p {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -325,6 +331,7 @@ $montserrat: 'Montserrat', sans-serif;
   min-height: 100vh;
   width: auto;
   background-image: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=');
+  border: 1px solid black;
   .centered-navigation{
     background-color: transparent;
     .centered-navigation-mobile-menu {
@@ -349,6 +356,35 @@ $transparentblue: rgba(0, 0, 59, 0.8);
 @-webkit-keyframes revealText {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+.servicesButton {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3vh;
+  text-transform: uppercase;
+  letter-spacing: .5vh;
+  font-family: $montserrat;
+  font-weight: 400;
+  opacity: 0;
+  -webkit-animation: revealText 0.5s ease-in 1.3s;
+  -moz-animation: revealText 0.5s ease-in 1.3s;
+  -o-animation: revealText 0.5s ease-in 1.3s;
+  -ms-animation: revealText 0.5s ease-in 1.3s;
+  animation: revealText 0.5s ease-in 1.3s;
+  -webkit-animation-fill-mode:forwards;
+ -moz-animation-fill-mode:forwards;
+ -o-animation-fill-mode:forwards;
+ -ms-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+
+    &:hover {
+
+    }
 }
 
 .rectangle {
@@ -406,12 +442,7 @@ $transparentblue: rgba(0, 0, 59, 0.8);
    animation-fill-mode:forwards;
   }
 }
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
+
 .reveal {
   height: 50vh;
   transition: height 1s ease-in;
