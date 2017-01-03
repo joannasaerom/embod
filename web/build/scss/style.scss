@@ -358,7 +358,7 @@ $transparentblue: rgba(0, 0, 59, 0.8);
   100% { opacity: 1; }
 }
 
-.servicesButton {
+.servicesButton a{
   cursor: pointer;
   position: absolute;
   top: 80%;
@@ -382,8 +382,20 @@ $transparentblue: rgba(0, 0, 59, 0.8);
  -ms-animation-fill-mode:forwards;
  animation-fill-mode:forwards;
 
-    &:hover {
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
 
+    &::after {
+      display: block;
+      content: '';
+      padding-top: 1vh;
+      border-bottom: solid 3px white;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    &:hover::after {
+      transform: scaleX(1);
     }
 }
 
