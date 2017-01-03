@@ -3,3 +3,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+%border-bottom {
+  display: block;
+  content: '';
+  padding-top: 1vh;
+  border-bottom: solid 3px $black;
+  transform: scaleX(0.2);
+}

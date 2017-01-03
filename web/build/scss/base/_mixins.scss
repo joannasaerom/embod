@@ -1,0 +1,12 @@
+@mixin transition-properties($transitionName, $transitionTime, $transitionStyle, $transitionDelay){
+  -webkit-animation: $transitionName $transitionTime $transitionStyle $transitionDelay;
+  -moz-animation: $transitionName $transitionTime $transitionStyle $transitionDelay;
+  -o-animation: $transitionName $transitionTime $transitionStyle $transitionDelay;
+  -ms-animation: $transitionName $transitionTime $transitionStyle $transitionDelay;
+  animation: $transitionName $transitionTime $transitionStyle $transitionDelay;
+  -webkit-animation-fill-mode:forwards;
+ -moz-animation-fill-mode:forwards;
+ -o-animation-fill-mode:forwards;
+ -ms-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+}

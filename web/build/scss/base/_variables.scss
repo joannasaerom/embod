@@ -4,13 +4,13 @@ $montserrat: 'Montserrat', sans-serif;
 
 //colors
 $transparentblue: rgba(0, 0, 59, 0.8);
-$black: black !default;
-$white: white !default;
+$black: black;
+$white: white;
 
 //for navigation bar
-$base-border-radius: 1px !default;
-$large-screen: 53.75em !default;
-$base-font-color: $black !default;
+$base-border-radius: 1px;
+$large-screen: 53.75em;
+$base-font-color: $black;
 $centered-navigation-padding: 1em;
 $centered-navigation-logo-height: 2em;
 $submenu-background: transparentize($white, 0.8);

@@ -3,9 +3,11 @@
   border-radius: 2px;
   min-height: 50vh;
   margin: 0 auto;
+
   a {
-    color: white;
+    color: $white;
   }
+
   ul {
     margin: 0 auto;
     padding: 0px;
@@ -13,6 +15,7 @@
     line-height: 20px;
     text-align: center;
   }
+  
   li {
     list-style: none;
   }

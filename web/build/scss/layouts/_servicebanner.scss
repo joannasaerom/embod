@@ -3,7 +3,6 @@
   width: 100%;
   padding-top: 2vh;
 
-
   h2 {
     text-align: center;
     font-family: $librefont;
@@ -12,11 +11,7 @@
     width: 100%;
 
     &::after {
-      display: block;
-      content: '';
-      padding-top: 1vh;
-      border-bottom: solid 3px black;
-      transform: scaleX(0.2);
+      @extend %border-bottom;
     }
   }
 

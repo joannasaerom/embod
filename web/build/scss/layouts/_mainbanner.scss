@@ -6,23 +6,7 @@
   min-height: 100vh;
   width: auto;
   background-image: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=');
-  border: 0.00001px solid white;
-  // .centered-navigation{
-  //   background-color: transparent;
-  //   .centered-navigation-mobile-menu {
-  //     color: white;
-  //   }
-  //   ul li.nav-link{
-  //     a{
-  //       color: white;
-  //
-  //     }
-  //     > a::after {
-  //       color: white;
-  //     }
-  //
-  //   }
-  // }
+  border: 0.1px solid $white;
 }
 
 @-webkit-keyframes revealText {
@@ -36,36 +20,22 @@
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: $white;
   font-size: 3vh;
   text-transform: uppercase;
   letter-spacing: .5vh;
-  font-family: $montserrat;
   font-weight: 400;
   opacity: 0;
-  -webkit-animation: revealText 0.5s ease-in 1.3s;
-  -moz-animation: revealText 0.5s ease-in 1.3s;
-  -o-animation: revealText 0.5s ease-in 1.3s;
-  -ms-animation: revealText 0.5s ease-in 1.3s;
-  animation: revealText 0.5s ease-in 1.3s;
-  -webkit-animation-fill-mode:forwards;
- -moz-animation-fill-mode:forwards;
- -o-animation-fill-mode:forwards;
- -ms-animation-fill-mode:forwards;
- animation-fill-mode:forwards;
+  @include transition-properties(revealText, 1s, ease-in, 1s);
 
     &:hover, &:focus, &:active {
       text-decoration: none;
     }
 
     &::after {
-      display: block;
-      content: '';
-      padding-top: 1vh;
-      border-bottom: solid 3px white;
-      transform: scaleX(0);
-      transition: transform 250ms ease-in-out;
+      @extend %border-bottom;
     }
+
     &:hover::after {
       transform: scaleX(1);
     }
@@ -80,7 +50,6 @@
 	background: $transparentblue;
 	position: absolute;
 
-
   h1 {
     text-align: center;
     color: white;
@@ -91,16 +60,7 @@
     margin-top: 3vh;
     padding-left: 3vh;
     letter-spacing: 4vh;
-    -webkit-animation: revealText 1s ease-in 1s;
-    -moz-animation: revealText 1s ease-in 1s;
-    -o-animation: revealText 1s ease-in 1s;
-    -ms-animation: revealText 1s ease-in 1s;
-    animation: revealText 1s ease-in 1s;
-    -webkit-animation-fill-mode:forwards;
-   -moz-animation-fill-mode:forwards;
-   -o-animation-fill-mode:forwards;
-   -ms-animation-fill-mode:forwards;
-   animation-fill-mode:forwards;
+    @include transition-properties(revealText, 1s, ease-in, 1s);
 
     & .centertext {
       letter-spacing: 3vh;
@@ -112,18 +72,8 @@
     text-align: center;
     color: white;
     opacity: 0;
-    // font-family: $montserrat;
     font-style: italic;
-    -webkit-animation: revealText 1s ease-in 1s;
-    -moz-animation: revealText 1s ease-in 1s;
-    -o-animation: revealText 1s ease-in 1s;
-    -ms-animation: revealText 1s ease-in 1s;
-    animation: revealText 1s ease-in 1s;
-    -webkit-animation-fill-mode:forwards;
-   -moz-animation-fill-mode:forwards;
-   -o-animation-fill-mode:forwards;
-   -ms-animation-fill-mode:forwards;
-   animation-fill-mode:forwards;
+    @include transition-properties(revealText, 1s, ease-in, 1s);
   }
 }
 
