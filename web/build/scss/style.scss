@@ -22,10 +22,9 @@ body {
   padding: 0px;
 }
 .servicesBanner {
-  height: 40vh;
+  height: 35vh;
   width: 100%;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 2vh;
 
 
   h2 {
@@ -73,8 +72,9 @@ body {
     background:$transparentblue;
     color:#ffffff;
     font-size:1em;
-    letter-spacing:5px;
+    letter-spacing:4px;
     padding:20px;
+    font-family: $librefont;
     margin-left: 5%;
     transition:0.3s ease-in;
 
@@ -364,7 +364,7 @@ body {
   min-height: 100vh;
   width: auto;
   background-image: url('https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=');
-  border: 1px solid black;
+  border: 0.00001px solid white;
   .centered-navigation{
     background-color: transparent;
     .centered-navigation-mobile-menu {
@@ -381,9 +381,47 @@ body {
   }
 }
 .subpage{
-  margin-top: 75px;
+  margin-top: 10vh;
+}
+.sidemenu{
+  background-color: $transparentblue;
+  min-height: 50vh;
+  margin: 0 auto;
+  a {
+    color: white;
+  }
+  ul {
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+  }
+  li {
+    list-style: none;
+  }
 }
 
+.col-sm-6 h2 {
+  // border: 1px solid black;
+  text-align: center;
+  font-family: $librefont;
+  font-size: 3em;
+
+  &::after {
+    display: block;
+    content: '';
+    padding-top: 1vh;
+    border-bottom: solid 3px black;
+    transform: scaleX(0.2);
+  }
+}
+.col-sm-6 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.row {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 
 
 @-webkit-keyframes revealText {
