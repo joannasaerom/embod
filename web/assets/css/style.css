@@ -13,11 +13,11 @@ html {
 .container-fluid {
   padding: 0px; }
 
-.servicesbanner {
+.servicesBanner {
   height: 30vh;
   width: 100%;
   display: table; }
-  .servicesbanner h2 {
+  .servicesBanner h2 {
     text-align: center;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
@@ -204,49 +204,87 @@ html {
             text-align: left;
             width: 12em; } }
 
-.mainbanner {
+.mainBanner {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
   min-height: 100vh;
   width: auto;
-  background-image: url("https://images.unsplash.com/photo-1474426112664-8f4248139c49?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=509&amp;q=80&amp;cs=tinysrgb&amp;crop="); }
-  .mainbanner .centered-navigation {
+  background-image: url("https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?dpr=2&amp;auto=format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop="); }
+  .mainBanner .centered-navigation {
     background-color: transparent; }
-    .mainbanner .centered-navigation .centered-navigation-mobile-menu {
+    .mainBanner .centered-navigation .centered-navigation-mobile-menu {
       color: white; }
-    .mainbanner .centered-navigation ul li.nav-link a {
+    .mainBanner .centered-navigation ul li.nav-link a {
       color: white; }
-    .mainbanner .centered-navigation ul li.nav-link > a::after {
+    .mainBanner .centered-navigation ul li.nav-link > a::after {
       color: white; }
 
 .subpage {
   margin-top: 75px; }
 
-.hexagon {
-  width: 100px;
-  height: 55px;
-  background: red;
-  position: relative; }
-  .hexagon::before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid red; }
-  .hexagon::after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid red; }
+@-webkit-keyframes revealText {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.rectangle {
+  width: 100vh;
+  height: 0vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 59, 0.8);
+  position: absolute; }
+  .rectangle h1 {
+    text-align: center;
+    color: white;
+    font-size: 15vh;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    opacity: 0;
+    margin-top: 3vh;
+    padding-left: 3vh;
+    letter-spacing: 4vh;
+    -webkit-animation: revealText 1s ease-in 1s;
+    -moz-animation: revealText 1s ease-in 1s;
+    -o-animation: revealText 1s ease-in 1s;
+    -ms-animation: revealText 1s ease-in 1s;
+    animation: revealText 1s ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+    .rectangle h1 .centertext {
+      letter-spacing: 3vh;
+      padding-left: 3vh; }
+  .rectangle h6 {
+    text-align: center;
+    color: white;
+    opacity: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    -webkit-animation: revealText 1s ease-in 1s;
+    -moz-animation: revealText 1s ease-in 1s;
+    -o-animation: revealText 1s ease-in 1s;
+    -ms-animation: revealText 1s ease-in 1s;
+    animation: revealText 1s ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
+.reveal {
+  height: 50vh;
+  transition: height 1s ease-in; }
 
 /*# sourceMappingURL=style.css.map */
