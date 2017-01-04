@@ -58,6 +58,7 @@
     width: 0%;
 
     @include media($horizontal-bar-mode) {
+      margin-top: 15vh;
       margin-left:-25%;
       height:0px;
       opacity:0;

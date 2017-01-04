@@ -487,6 +487,7 @@ form {
   width: 0%; }
   @media screen and (min-width: 53.75em) {
     .offcanvas {
+      margin-top: 15vh;
       margin-left: -25%;
       height: 0px;
       opacity: 0;
