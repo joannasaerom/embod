@@ -1,10 +1,12 @@
 .services {
   display: flex;
+  flex-wrap: wrap;
 
   .service-boxes {
     flex-grow: 1;
     overflow: hidden;
-    height: 400px;
+    height: $verticalfull / 2;
+    width: $browsersize / 2;
     position: relative;
     opacity: 0.8;
 
@@ -29,6 +31,12 @@
    img {
      width: 600px;
      height: auto;
+   }
+
+   @include media($horizontal-bar-mode) {
+     width: $browsersize / 4;
+     height: $verticalfull;
+
    }
   }
 }

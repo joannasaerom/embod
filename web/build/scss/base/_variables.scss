@@ -3,16 +3,14 @@ $librefont: 'Libre Baskerville', serif;
 $montserrat: 'Montserrat', sans-serif;
 
 //colors
-$transparentblue: rgba(164, 252, 249, 0.5);
 $transparentgreen: rgba(100, 182, 172, 0.4);
-$transparentblack: rgba(51, 63, 69, 0.8);
+$transparentblack: rgba(177, 218, 213, 0.35);
 $black: #333F45;
 $white: white;
 $greensheen: #64B6AC;
 
 //for navigation bar
 $base-border-radius: 1px;
-$large-screen: 53.75em;
 $base-font-color: $black;
 $centered-navigation-padding: 1em;
 $centered-navigation-logo-height: 2em;
@@ -23,4 +21,10 @@ $centered-navigation-item-padding: .5em;
 $centered-navigation-submenu-padding: 2.5em;
 $centered-navigation-submenu-width: 12em;
 $centered-navigation-item-nudge: 2.2em;
+
+//screen sizes
+$browsersize: 100%;
+$large-screen: 53.75em;
 $horizontal-bar-mode: $large-screen;
+$verticalfull: 400px;
+$smallscreen: 768px;

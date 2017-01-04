@@ -342,6 +342,9 @@ form {
     transition: transform 250ms ease-in-out; }
   .servicesButton a:hover::after {
     transform: scaleX(1); }
+  @media (max-width: 768px) {
+    .servicesButton a {
+      display: none; } }
 
 .rectangle {
   width: 100vh;
@@ -349,7 +352,7 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(51, 63, 69, 0.8);
+  background: rgba(177, 218, 213, 0.35);
   position: absolute; }
   .rectangle h1 {
     text-align: center;
@@ -394,9 +397,8 @@ form {
   transition: height 1s ease-in; }
 
 .servicesBanner {
-  height: 35vh;
   width: 100%;
-  padding-top: 2vh; }
+  padding: 5vh; }
   .servicesBanner h2 {
     text-align: center;
     font-family: "Libre Baskerville", serif;
@@ -409,11 +411,13 @@ form {
     text-align: justify; }
 
 .services {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .services .service-boxes {
     flex-grow: 1;
     overflow: hidden;
-    height: 400px;
+    height: 200px;
+    width: 50%;
     position: relative;
     opacity: 0.8; }
     .services .service-boxes:hover {
@@ -433,6 +437,10 @@ form {
     .services .service-boxes img {
       width: 600px;
       height: auto; }
+    @media screen and (min-width: 53.75em) {
+      .services .service-boxes {
+        width: 25%;
+        height: 400px; } }
 
 .subpage {
   margin-top: 15vh; }
