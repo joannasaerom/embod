@@ -3,9 +3,10 @@ $librefont: 'Libre Baskerville', serif;
 $montserrat: 'Montserrat', sans-serif;
 
 //colors
-$transparentblue: rgba(0, 0, 59, 0.8);
-$black: black;
+$transparentblue: rgba(164, 252, 249, 0.5);
+$black: #333F45;
 $white: white;
+$greensheen: #64B6AC;
 
 //for navigation bar
 $base-border-radius: 1px;
@@ -15,7 +16,6 @@ $centered-navigation-padding: 1em;
 $centered-navigation-logo-height: 2em;
 $submenu-background: transparentize($white, 0.8);
 $centered-navigation-color: transparentize($base-font-color, 0.1);
-$centered-navigation-color-hover: $base-font-color;
 $centered-navigation-height: 50px;
 $centered-navigation-item-padding: .5em;
 $centered-navigation-submenu-padding: 2.5em;

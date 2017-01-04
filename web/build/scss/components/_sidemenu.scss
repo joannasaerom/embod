@@ -1,11 +1,15 @@
 .sidemenu{
-  background-color: $transparentblue;
+  background-color: $greensheen;
   border-radius: 2px;
   min-height: 50vh;
   margin: 0 auto;
 
   a {
     color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   ul {
@@ -15,7 +19,7 @@
     line-height: 20px;
     text-align: center;
   }
-  
+
   li {
     list-style: none;
   }

@@ -33,7 +33,12 @@
     }
 
     &::after {
-      @extend %border-bottom;
+      display: block;
+      content: '';
+      padding-top: 1vh;
+      border-bottom: solid 3px white;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
     }
 
     &:hover::after {
