@@ -118,5 +118,13 @@
         return $app['twig']->render('contact.html.twig');
     });
 
+    $app->post("/contact", function() use ($app) {
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $message = $_POST['message'];
+      
+      return $app['twig']->render('contact.html.twig');
+    });
+
     return $app;
 ?>

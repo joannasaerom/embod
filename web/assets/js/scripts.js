@@ -5,7 +5,6 @@ $(document).ready(function() {
   $("#servicesButton").addClass("revealText");
   $(".row").addClass("fadeIn");
 
-
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
