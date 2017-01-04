@@ -1,0 +1,13 @@
+.btn {
+  color: $black;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 2px;
+
+  &:focus, &:hover, &:active {
+    color: $greensheen;
+    background-color: $white;
+    border: 1px solid $greensheen;
+    border-radius: 2px;
+  }
+}

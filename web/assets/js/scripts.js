@@ -1,9 +1,10 @@
 $(document).ready(function() {
   $("#rectangle").addClass("reveal");
-  // $("#companyName").addClass("revealText");
+  $("#companyName").addClass("revealText");
   $("#companySlogan").addClass("revealText");
   $("#servicesButton").addClass("revealText");
   $(".row").addClass("fadeIn");
+
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
