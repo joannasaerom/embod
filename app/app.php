@@ -111,7 +111,8 @@
     $app->get("/ascenter", function() use ($app) {
         $title = "A/S Center";
         $content = "Cow taleggio boursin. Parmesan cheeseburger goat stinking bishop pecorino parmesan bocconcini cheese on toast. Dolcelatte blue castello fromage frais queso red leicester cauliflower cheese caerphilly danish fontina. Boursin smelly cheese cottage cheese stilton cheese on toast port-salut cheese triangles say cheese. Cheese and biscuits emmental camembert de normandie feta cheese and biscuits everyone loves blue castello croque monsieur. Emmental mascarpone cut the cheese smelly cheese the big cheese taleggio port-salut who moved my cheese. Red leicester st. agur blue cheese paneer halloumi cheeseburger everyone loves cream cheese stilton. Who moved my cheese brie taleggio jarlsberg manchego everyone loves cheddar cut the cheese. Manchego cheeseburger cheese slices camembert de normandie cheeseburger pepper jack parmesan fondue. When the cheese comes out everybody's happy airedale melted cheese macaroni cheese blue castello gouda manchego monterey jack. The big cheese mascarpone babybel camembert de normandie cream cheese roquefort red leicester babybel. Cheese strings mascarpone bavarian bergkase cheeseburger cottage cheese.";
-        return $app['twig']->render('three-col-subpage.html.twig', array('title' => $title, 'content' => $content));
+        $sidebarContent = "For issues please contact: Parmesan cheeseburger goat stinking bishop pecorino parmesan bocconcini cheese on toast. Dolcelatte blue castello fromage frais queso red leicester cauliflower cheese caerphilly danish fontina. Boursin smelly cheese cottage cheese stilton cheese on toast port-salut cheese triangles say cheese.";
+        return $app['twig']->render('two-col-subpage.html.twig', array('title' => $title, 'content' => $content, 'sidebarContent' => $sidebarContent));
     });
 
     $app->get("/contact", function() use ($app) {
@@ -122,7 +123,7 @@
       $name = $_POST['name'];
       $email = $_POST['email'];
       $message = $_POST['message'];
-      
+
       return $app['twig']->render('contact.html.twig');
     });
 
