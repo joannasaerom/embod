@@ -3,9 +3,81 @@
   height: 100vh;
 }
 
+// .mapColFull {
+//   height: 100vh;
+//   width: 100%;
+//   float:right;
+// }
+//
+// .mapColHalf {
+//   height: 100vh;
+//   width: 65%;
+//   float: right;
+// }
+
+.mapColFull {
+  height: 100vh;
+  flex-grow: 1;
+  float:right;
+}
+
+.mapColHalf {
+  height: 100vh;
+  flex-grow: 2;
+  float: right;
+}
+
 .address {
   text-align: center;
   line-height: 2vh;
   padding-top: 3vh;
   padding-bottom: 3vh;
+}
+
+.contactRow {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  & div {
+    -webkit-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+    -moz-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+    -o-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+    transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+  }
+
+  @include media($horizontal-bar-mode) {
+    flex-direction: row;
+  }
+}
+
+.offcanvas {
+    margin-top:-25%;
+    height:0px;
+    opacity:0;
+    width: 0%;
+
+    @include media($horizontal-bar-mode) {
+      margin-left:-25%;
+      height:0px;
+      opacity:0;
+      width: 0%;
+    }
+}
+
+.oncanvas {
+  margin-top: 15vh;
+  flex-grow: 1;
+  opacity: 1;
+  z-index: 1;
+  float: left;
+
+  @include media($horizontal-bar-mode) {
+    margin-left: 0%;
+    height: 100vh;
+    flex-grow: 1;
+    opacity: 1;
+    z-index: 1;
+    float: left;
+  }
 }

@@ -4,6 +4,12 @@ $(document).ready(function() {
   $("#companySlogan").addClass("revealText");
   $("#servicesButton").addClass("revealText");
   $(".fadeInTransition").addClass("fadeIn");
+  $('#contactForm').removeClass('offcanvas');
+  $('#contactForm').addClass('oncanvas');
+  $('#mapCol').removeClass('mapColFull');
+  $('#mapCol').addClass('mapColHalf');
+
+
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {

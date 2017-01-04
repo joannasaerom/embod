@@ -51,7 +51,8 @@ h2 {
   color: #333F45;
   background-color: white;
   border: 1px solid #333F45;
-  border-radius: 2px; }
+  border-radius: 2px;
+  margin-bottom: 10px; }
   .btn:focus, .btn:hover, .btn:active {
     color: #64B6AC;
     background-color: white;
@@ -450,10 +451,60 @@ form {
   width: 100%;
   height: 100vh; }
 
+.mapColFull {
+  height: 100vh;
+  flex-grow: 1;
+  float: right; }
+
+.mapColHalf {
+  height: 100vh;
+  flex-grow: 2;
+  float: right; }
+
 .address {
   text-align: center;
   line-height: 2vh;
   padding-top: 3vh;
   padding-bottom: 3vh; }
+
+.contactRow {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
+  .contactRow div {
+    -webkit-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+    -moz-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+    -o-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
+    transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease; }
+  @media screen and (min-width: 53.75em) {
+    .contactRow {
+      flex-direction: row; } }
+
+.offcanvas {
+  margin-top: -25%;
+  height: 0px;
+  opacity: 0;
+  width: 0%; }
+  @media screen and (min-width: 53.75em) {
+    .offcanvas {
+      margin-left: -25%;
+      height: 0px;
+      opacity: 0;
+      width: 0%; } }
+
+.oncanvas {
+  margin-top: 15vh;
+  flex-grow: 1;
+  opacity: 1;
+  z-index: 1;
+  float: left; }
+  @media screen and (min-width: 53.75em) {
+    .oncanvas {
+      margin-left: 0%;
+      height: 100vh;
+      flex-grow: 1;
+      opacity: 1;
+      z-index: 1;
+      float: left; } }
 
 /*# sourceMappingURL=style.css.map */
