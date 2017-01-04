@@ -67,7 +67,8 @@ h2 {
   .sidemenu a {
     color: white; }
     .sidemenu a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #D0E9E6; }
   .sidemenu ul {
     margin: 0 auto;
     padding: 0px;
@@ -221,7 +222,7 @@ form {
     opacity: 0.9; }
   .centered-navigation li.more.nav-link {
     padding-right: 0; }
-    @media screen and (min-width: 53.75em) {
+    @media screen and (min-width: 888px) {
       .centered-navigation li.more.nav-link {
         padding-right: 2.5em; } }
     .centered-navigation li.more.nav-link > ul > li:first-child a {
@@ -246,7 +247,7 @@ form {
     .centered-navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
-      @media screen and (min-width: 53.75em) {
+      @media screen and (min-width: 888px) {
         .centered-navigation li.more > a {
           margin-right: 2.5em; } }
       .centered-navigation li.more > a::after {

@@ -129,7 +129,7 @@
   li.more.nav-link {
     padding-right: 0;
 
-    @include media($large-screen) {
+    @include media($horizontal-bar-mode) {
       padding-right: $centered-navigation-submenu-padding;
     }
 
@@ -164,7 +164,7 @@
       padding-right: 1.6em;
       position: relative;
 
-      @include media($large-screen) {
+      @include media($horizontal-bar-mode) {
         margin-right: $centered-navigation-submenu-padding;
       }
 
