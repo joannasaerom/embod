@@ -1,5 +1,5 @@
 .centered-navigation {
-  background-color: $submenu-background;
+  background-color: $transparentgreen;
   min-height: $centered-navigation-height;
   font-family: $librefont;
   width: 100%;
@@ -14,7 +14,7 @@
 
     img {
       max-height: $centered-navigation-height;
-      opacity: 0.6;
+      opacity: 0.9;
       padding: 0.8em 0;
     }
 
@@ -24,7 +24,7 @@
    }
 
   .centered-navigation-mobile-menu {
-    color: $black;
+    color: $white;
     display: block;
     float: right;
     line-height: $centered-navigation-height;
@@ -79,7 +79,7 @@
   }
 
   ul li.nav-link {
-    background: $submenu-background;
+    background: $transparentgreen;
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
@@ -89,7 +89,7 @@
     z-index: 9999;
 
     a {
-      color: $black;
+      color: $white;
       display: inline-block;
       outline: none;
       text-decoration: none;
@@ -121,7 +121,6 @@
   }
 
   .logo img {
-    margin-bottom: -$centered-navigation-logo-height / 2;
     max-height: $centered-navigation-logo-height;
     opacity: 0.9;
   }
@@ -148,7 +147,7 @@
 
     > a::after {
       @include position(absolute, auto -0.4em auto auto);
-      color: $black;
+      color: $white;
       content: "\25BE";
     }
   }
@@ -218,14 +217,14 @@
       }
 
       a {
-        background-color: darken($submenu-background, 3%);
+        background-color: darken($transparentgreen, 3%);
         display: inline-block;
         text-align: right;
         text-decoration: none;
         width: 100%;
 
         @include media($horizontal-bar-mode) {
-          background-color: $submenu-background;
+          background-color: $transparentgreen;
           padding-left: $centered-navigation-submenu-padding;
           text-align: left;
           width: $centered-navigation-submenu-width;
@@ -239,7 +238,7 @@
 //   .centered-navigation {
 //
 //     .centered-navigation-mobile-menu {
-//       color: $black;
+//       color: $white;
 //     }
 //     &:focus,
 //     &:hover {
@@ -247,7 +246,7 @@
 //     }
 //
 //     ul li.nav-link a {
-//         color: $black;
+//         color: $white;
 //
 //         &:focus,
 //         &:hover {
@@ -257,7 +256,7 @@
 //
 //     li.more.nav-link {
 //       > a::after {
-//         color: $black;
+//         color: $white;
 //       }
 //     }
 //   }

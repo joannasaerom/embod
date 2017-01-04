@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#companyName").addClass("revealText");
   $("#companySlogan").addClass("revealText");
   $("#servicesButton").addClass("revealText");
-  $(".row").addClass("fadeIn");
+  $(".fadeInTransition").addClass("fadeIn");
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
