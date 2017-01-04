@@ -30,6 +30,23 @@ h2 {
   font-size: 3em;
   margin-top: 0px; }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.3; }
+  100% {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease-in;
+  -moz-animation: fadeIn 1s ease-in;
+  -o-animation: fadeIn 1s ease-in;
+  -ms-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
 .sidemenu {
   background-color: #64B6AC;
   border-radius: 2px;
@@ -369,6 +386,9 @@ h2 {
 
 .col-sm-4 {
   margin-bottom: 5px; }
+
+.row {
+  opacity: 0.3; }
 
 #map {
   width: 100%;

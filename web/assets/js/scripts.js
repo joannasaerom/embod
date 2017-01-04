@@ -1,10 +1,9 @@
 $(document).ready(function() {
   $("#rectangle").addClass("reveal");
-  $("#companyName").addClass("revealText");
+  // $("#companyName").addClass("revealText");
   $("#companySlogan").addClass("revealText");
   $("#servicesButton").addClass("revealText");
-
-  initMap();
+  $(".row").addClass("fadeIn");
 
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -21,6 +20,7 @@ $(document).ready(function() {
     });
   });
 
+  initMap();
 });
 
 $(window).on("load resize",function(e) {
