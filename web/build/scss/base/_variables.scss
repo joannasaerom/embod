@@ -16,15 +16,16 @@ $centered-navigation-padding: 1em;
 $centered-navigation-logo-height: 2em;
 $submenu-background: transparentize($white, 0.8);
 $centered-navigation-color: transparentize($base-font-color, 0.1);
-$centered-navigation-height: 50px;
+$centered-navigation-height: 40px;
 $centered-navigation-item-padding: .5em;
 $centered-navigation-submenu-padding: 2.5em;
 $centered-navigation-submenu-width: 12em;
 $centered-navigation-item-nudge: 2.2em;
 
 //screen sizes
+$change-to-hamburger: 888px;
 $browsersize: 100%;
 $large-screen: 53.75em;
-$horizontal-bar-mode: $large-screen;
+$horizontal-bar-mode: $change-to-hamburger;
 $verticalfull: 400px;
 $smallscreen: 768px;
