@@ -5,7 +5,7 @@
     },
     "extra": {
         "paas": {
-            "index-document": "app/app.php"
+            "index-document": "web/index.php"
         }
     }
 }
