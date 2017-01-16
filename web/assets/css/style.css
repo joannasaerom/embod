@@ -19,7 +19,9 @@ h2::after, .servicesBanner h2::after {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #333F45; }
+  color: #333F45;
+  padding: 0;
+  margin: 0; }
 
 .container-fluid {
   padding: 0px; }
@@ -139,7 +141,7 @@ form {
       max-height: 40px;
       opacity: 0.9;
       padding: 0.8em 0; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation .mobile-logo {
         display: none; } }
   .centered-navigation .centered-navigation-mobile-menu {
@@ -151,7 +153,7 @@ form {
     padding-right: 2.5em;
     text-decoration: none;
     text-transform: uppercase; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation .centered-navigation-mobile-menu {
         display: none; } }
     .centered-navigation .centered-navigation-mobile-menu:focus, .centered-navigation .centered-navigation-mobile-menu:hover {
@@ -181,11 +183,11 @@ form {
     z-index: 99999; }
     .centered-navigation ul.centered-navigation-menu.show {
       display: block; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation ul.centered-navigation-menu {
         display: block;
         text-align: center; } }
-  @media screen and (min-width: 888px) {
+  @media screen and (min-width: 55.5em) {
     .centered-navigation .nav-link:first-child {
       margin-left: 2.2em; } }
   .centered-navigation ul li.nav-link {
@@ -204,7 +206,7 @@ form {
       text-decoration: none; }
       .centered-navigation ul li.nav-link a:focus, .centered-navigation ul li.nav-link a:hover {
         color: #64B6AC; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation ul li.nav-link {
         background: transparent;
         display: inline;
@@ -214,7 +216,7 @@ form {
   .centered-navigation li.logo.nav-link {
     display: none;
     line-height: 0; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation li.logo.nav-link {
         display: inline; } }
   .centered-navigation .logo img {
@@ -222,7 +224,7 @@ form {
     opacity: 0.9; }
   .centered-navigation li.more.nav-link {
     padding-right: 0; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation li.more.nav-link {
         padding-right: 2.5em; } }
     .centered-navigation li.more.nav-link > ul > li:first-child a {
@@ -247,7 +249,7 @@ form {
     .centered-navigation li.more > a {
       padding-right: 1.6em;
       position: relative; }
-      @media screen and (min-width: 888px) {
+      @media screen and (min-width: 55.5em) {
         .centered-navigation li.more > a {
           margin-right: 2.5em; } }
       .centered-navigation li.more > a::after {
@@ -257,14 +259,14 @@ form {
         right: 1.25em; }
     .centered-navigation li.more:focus > .submenu, .centered-navigation li.more:hover > .submenu {
       display: block; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation li.more {
         padding-right: 2.5em;
         position: relative; } }
   .centered-navigation ul.submenu {
     display: none;
     padding-left: 0; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .centered-navigation ul.submenu {
         left: -2.5em;
         position: absolute;
@@ -272,7 +274,7 @@ form {
     .centered-navigation ul.submenu li {
       display: block;
       padding-right: 0; }
-      @media screen and (min-width: 888px) {
+      @media screen and (min-width: 55.5em) {
         .centered-navigation ul.submenu li {
           line-height: 30.76923px; }
           .centered-navigation ul.submenu li:first-child > a {
@@ -288,7 +290,7 @@ form {
         text-align: right;
         text-decoration: none;
         width: 100%; }
-        @media screen and (min-width: 888px) {
+        @media screen and (min-width: 55.5em) {
           .centered-navigation ul.submenu li a {
             background-color: rgba(100, 182, 172, 0.4);
             padding-left: 2.5em;
@@ -343,7 +345,7 @@ form {
     transition: transform 250ms ease-in-out; }
   .servicesButton a:hover::after {
     transform: scaleX(1); }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     .servicesButton a {
       display: none; } }
 
@@ -417,7 +419,7 @@ form {
   .services .service-boxes {
     flex-grow: 1;
     overflow: hidden;
-    height: 200px;
+    height: 12.5em;
     width: 50%;
     position: relative;
     opacity: 0.8; }
@@ -438,10 +440,10 @@ form {
     .services .service-boxes img {
       width: 600px;
       height: auto; }
-    @media screen and (min-width: 888px) {
+    @media screen and (min-width: 55.5em) {
       .services .service-boxes {
         width: 25%;
-        height: 400px; } }
+        height: 25em; } }
 
 .subpage {
   margin-top: 15vh; }
@@ -500,7 +502,7 @@ form {
     -moz-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
     -o-transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease;
     transition: width 1.25s ease, height 1.25s ease, margin 1.25s ease, padding 1.25s ease, opacity 1.25s ease; }
-  @media screen and (min-width: 888px) {
+  @media screen and (min-width: 55.5em) {
     .contactRow {
       flex-direction: row; } }
 
@@ -509,7 +511,7 @@ form {
   height: 0px;
   opacity: 0;
   width: 0%; }
-  @media screen and (min-width: 888px) {
+  @media screen and (min-width: 55.5em) {
     .offcanvas {
       margin-top: 15vh;
       margin-left: -25%;
@@ -523,7 +525,7 @@ form {
   opacity: 1;
   z-index: 1;
   float: left; }
-  @media screen and (min-width: 888px) {
+  @media screen and (min-width: 55.5em) {
     .oncanvas {
       margin-left: 0%;
       height: 100vh;
